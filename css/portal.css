@@ -1,0 +1,94 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-image: url(2001073.jpg);
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-family: courier new body copy;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 15%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: white;
+    /*background-image:  url("2001072.jpg");*/
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.my_error{
+      color: red;
+      /* Other fancy things, to make it look really nice*/
+ }
+
+article {
+    float: left;
+    padding: 0px;
+    width: 100%;
+    background-color: #f1f1f1;
+    
+    /*height: 300px;  only for demonstration, should be removed */
+}
+ .loginbox {
+    padding: 20px;
+    background-image: url("2001010.jpg");
+ }
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+.error{
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px
+    text-align: left;
+    text-align: left;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+
+.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger {
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+.$message{
+    color:red;
+}
